@@ -19,6 +19,12 @@ import { WebviewDirective } from './directives/webview.directive';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
+import { MessageComponent } from './components/message/message.component';
+import { MessageListComponent } from './components/message-list/message-list.component';
+import { WalletComponent } from './components/wallet/wallet.component';
+import { ExplorerComponent } from './components/explorer/explorer.component';
+import { UserProfileComponent } from './components/user-profile/user-profile.component';
+import { PeerComponent } from './components/peer/peer.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -29,7 +35,13 @@ export function HttpLoaderFactory(http: HttpClient) {
   declarations: [
     AppComponent,
     HomeComponent,
-    WebviewDirective
+    WebviewDirective,
+    MessageComponent,
+    MessageListComponent,
+    WalletComponent,
+    ExplorerComponent,
+    UserProfileComponent,
+    PeerComponent
   ],
   imports: [
     BrowserModule,
